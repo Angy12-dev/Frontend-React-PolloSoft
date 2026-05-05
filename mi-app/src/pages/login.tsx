@@ -21,7 +21,10 @@ const Login = () => {
             body: raw,
         };
 
-        fetch("http://localhost:3002/auth/login", requestOptions)
+        fetch(
+            "https://pollosoft-backend.onrender.com/auth/login",
+            requestOptions,
+        )
             .then((response) => {
                 if (response.ok) {
                     return response.json();
