@@ -4,7 +4,7 @@ import "../css/login.css";
 
 const Login = () => {
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState(" ");
+    const [password, setPassword] = useState("");
 
     async function loginUser() {
         const myHeaders = new Headers();
@@ -22,9 +22,19 @@ const Login = () => {
         };
 
         fetch("http://localhost:3002/auth/login", requestOptions)
-            .then((response) => response.text())
-            .then((result) => console.log(result))
-            .catch((error) => console.error(error));
+            .then((response) => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    alert("Credenciales incorrectas");
+                }
+            })
+            .then((data) => {
+                localStorage.setItem("token", data.token);
+                localStorage.setItem("user", JSON.stringify(data.user));
+                alert("¡Sesión iniciada con éxito!");
+            })
+            .catch((error) => console.log("error", error));
     }
 
     return (
@@ -45,14 +55,14 @@ const Login = () => {
                         <input
                             type="email"
                             placeholder="Correo electrónico"
-                            className="input input-correo"
+                            className="input input-form"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         <input
                             type="password"
                             placeholder="Contraseña"
-                            className="input input-password"
+                            className="input input-form"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
@@ -64,9 +74,6 @@ const Login = () => {
                         </button>
                         <p className="login-text">
                             <a href="#">¿Olvide mi contraseña?</a>
-                        </p>
-                        <p className="login-text">
-                            ¿No tienes una cuenta? <a href="#">Regístrate</a>
                         </p>
                     </div>
                 </div>

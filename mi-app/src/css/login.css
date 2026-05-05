@@ -1,141 +1,137 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .page {
-  width: 100vw;
-  height: 100vh;
-  background: url("../assets/fondo_1.svg") no-repeat center / cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/fondo_1.svg") no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 .container {
-  width: 100%;
-  height: 100%;
-  background: url("../assets/fondo_2.svg") no-repeat center / cover;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/fondo_2.svg") no-repeat center / cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
 }
 
 .left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
 }
 
 .right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 .logo {
-  width: 250px;
-  margin-bottom: 20px;
+    width: 250px;
+    margin-bottom: 20px;
 }
 
 .left-titulo {
-  color: rgb(201, 9, 9);
-  font-size: 40px;
-  font-weight: 700;
+    color: rgb(201, 9, 9);
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .left-text {
-  color: rgb(230, 42, 42);
-  font-size: 20px;
-  font-weight: 700;
+    color: rgb(230, 42, 42);
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .card {
-  width: 100%;
-  max-width: 550px;
-  background: #fff;
-  border-radius: 50px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 60px 80px 80px;
+    width: 100%;
+    max-width: 550px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 60px 80px 80px;
 }
 
 .card h2 {
-  color: #8b4513;
-  font-weight: 800;
-  font-size: 40px;
-  margin-bottom: 8px;
+    color: #8b4513;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 8px;
 }
 
 .card p {
-  font-size: 20px;
-  color: #000;
-  font-weight: 400;
-  margin-bottom: 20px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-bottom: 2px solid #aa0e0e;
-  outline: none;
-  font-size: 14px;
-  background: transparent;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #aa0e0e;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
 }
 
-.input-correo {
-  margin-bottom: 25px;
-}
-
-.input-password {
-  margin-bottom: 20px;
+.input-form {
+    margin-bottom: 25px;
 }
 
 .button-inicio {
-  width: 100%;
-  height: 60px;
-  background: #aa480b;
-  border: none;
-  border-radius: 50px;
-  color: white;
-  font-size: 30px;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
+    width: 100%;
+    height: 60px;
+    background: #aa480b;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .button-inicio:hover {
-  background: #a64510;
+    background: #a64510;
 }
 
 .login-text {
-  margin-top: 13px;
-  font-size: 20px;
-  text-align: center;
+    margin-top: 13px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .login-text a {
-  color: #e67e22;
-  text-decoration: none;
-  font-weight: 800;
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: 800;
 }
 
 .login-text a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
